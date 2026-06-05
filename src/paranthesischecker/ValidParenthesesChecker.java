@@ -38,7 +38,6 @@ public class ValidParenthesesChecker {
 
         }
         
-        // if characterStack is empty then return false
         return characterStack.isEmpty();
         
     }
