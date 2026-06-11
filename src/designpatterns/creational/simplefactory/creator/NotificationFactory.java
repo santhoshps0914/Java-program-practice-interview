@@ -1,9 +1,9 @@
-package designpatterns.creational.factorymethod.creator;
+package designpatterns.creational.simplefactory.creator;
 
-import designpatterns.creational.factorymethod.product.Notification;
-import designpatterns.creational.factorymethod.product.concrete.EmailNotification;
-import designpatterns.creational.factorymethod.product.concrete.PushNotification;
-import designpatterns.creational.factorymethod.product.concrete.SMSNotification;
+import designpatterns.creational.simplefactory.product.Notification;
+import designpatterns.creational.simplefactory.product.concrete.EmailNotification;
+import designpatterns.creational.simplefactory.product.concrete.PushNotification;
+import designpatterns.creational.simplefactory.product.concrete.SMSNotification;
 
 public class NotificationFactory {
     

@@ -1,6 +1,6 @@
-package designpatterns.creational.factorymethod.product.concrete;
+package designpatterns.creational.simplefactory.product.concrete;
 
-import designpatterns.creational.factorymethod.product.Notification;
+import designpatterns.creational.simplefactory.product.Notification;
 
 public class SMSNotification implements Notification {
     

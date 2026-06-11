@@ -1,4 +1,4 @@
-package designpatterns.creational.factorymethod.product;
+package designpatterns.creational.simplefactory.product;
 
 public interface Notification {
     

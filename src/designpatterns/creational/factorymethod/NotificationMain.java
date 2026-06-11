@@ -1,24 +1,22 @@
 package designpatterns.creational.factorymethod;
 
-import designpatterns.creational.factorymethod.creator.NotificationFactory;
+import designpatterns.creational.factorymethod.concreteCreator.EmailCreator;
+import designpatterns.creational.factorymethod.concreteCreator.PushCreator;
+import designpatterns.creational.factorymethod.concreteCreator.SmsCreator;
+import designpatterns.creational.factorymethod.creator.NotificationCreator;
 
 public class NotificationMain {
-
     public static void main(String[] args) {
-
-        NotificationFactory notificationFactory = new NotificationFactory();
         
-        var notification = notificationFactory.createNotification("SmS");
-        var notification2 = notificationFactory.createNotification("e-MaIl");
-        var notification3 = notificationFactory.createNotification("PUSH");
+        NotificationCreator creator = new PushCreator();
+        creator.notifyUser();
         
-        notification.notifyUser("Balance amt credited");
-
-        notification2.notifyUser("your inbox is 90% full");
-
-        notification3.notifyUser("malle bartide yummy biryani beka");
+        creator = new SmsCreator();
+        creator.notifyUser();
+        
+        creator = new EmailCreator();
+        creator.notifyUser();
         
         
     }
-    
 }
